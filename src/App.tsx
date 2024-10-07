@@ -49,9 +49,9 @@ function App() {
           <HStack p={5}>
             <PlatformSelector
               selectedPlatform={gameQuery.platform}
-              onSelectPlatform={(platform) =>
-                setGameQuery({ ...gameQuery, platform })
-              }
+              onSelectPlatform={(platform) => {
+                setGameQuery({ ...gameQuery, platform });
+              }}
             />
             <SortSelector
               sortOrder={gameQuery.sortOrder}
