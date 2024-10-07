@@ -27,7 +27,7 @@ const theme = extendTheme({
       body: {
         bg: props.colorMode === "dark" ? "gray.800" : "gray.50", // Background color based on color mode
         color: props.colorMode === "dark" ? "white" : "gray.800", // Text color based on color mode
-        transition: "background-color 500ms ease, color 500ms ease", // Smooth transition
+        transition: "all 500ms ease", // Smooth transition
       },
     }),
   },
