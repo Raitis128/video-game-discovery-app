@@ -18,12 +18,12 @@ const useData = <T>(
 
   useEffect(
     () => {
-      const container = new AbortController();
+      const controller = new AbortController();
 
       setLoading(true);
       apiClient
         .get<FetchResponse<T>>(endpoint, {
-          signal: container.signal,
+          signal: controller.signal,
           ...requestConfig,
         })
         .then((res) => {
@@ -36,9 +36,7 @@ const useData = <T>(
           setLoading(false);
         });
 
-      return () => {
-        container.abort();
-      };
+      return () => controller.abort();
     },
     deps ? [...deps] : []
   );
