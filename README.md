@@ -42,4 +42,4 @@ Start the server
 
 ## Demo
 
-[Pokemon Search App](https://video-game-discovery-app-beta.vercel.app/)
+[Game Hub App](https://video-game-discovery-app-beta.vercel.app/)
