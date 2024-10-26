@@ -25,7 +25,7 @@ const HomePage = () => {
       <GridItem area="main">
         <Flex justifyContent="space-between" flexWrap="wrap">
           <GameHeading />
-          <HStack p={5}>
+          <HStack>
             <PlatformSelector />
             <SortSelector />
           </HStack>

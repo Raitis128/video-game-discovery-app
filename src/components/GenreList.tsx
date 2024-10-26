@@ -25,10 +25,10 @@ const GenreList = () => {
 
   return (
     <>
-      <Heading pt={5} pl={5} fontSize={"2xl"}>
+      <Heading pt={5} pb={5} fontSize={"2xl"}>
         Genres
       </Heading>
-      <List padding={5}>
+      <List>
         {data?.results?.map((genre) => (
           <ListItem key={genre.id} paddingY="5px">
             <HStack spacing={4} alignItems="center">
