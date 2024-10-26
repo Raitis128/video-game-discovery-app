@@ -11,6 +11,7 @@ With Game discovery APP you can:
 - Filter games based on Genre
 - Filter games based on platforms
 - Order/Sort games
+- Check games information (Platforms, Metascore, Publishers, Genres, Trailers, Screenshots)
 
 ## Run Locally
 
