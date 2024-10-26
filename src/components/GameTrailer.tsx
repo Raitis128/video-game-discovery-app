@@ -11,11 +11,17 @@ const GameTrailer = ({ gameId }: Props) => {
 
   if (error) throw error;
 
-  const first = data?.results[0];
+  const firstTrailer = data?.results?.[0];
 
-  return first ? (
-    <video src={data?.results[0].data[480]} poster={first.preview} controls />
-  ) : null;
+  return firstTrailer ? (
+    <video
+      src={firstTrailer.data[480]}
+      poster={firstTrailer.preview}
+      controls
+    />
+  ) : (
+    <p>No trailer available for this game.</p>
+  );
 };
 
 export default GameTrailer;
